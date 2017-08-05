@@ -3,7 +3,7 @@
 @import "timeline.less";
 
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Inconsolata', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
 
@@ -20,7 +20,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: @theme-success;
+  color: @light-accent;
   outline: none;
 }
 
@@ -56,17 +56,17 @@ hr.star-light {
 }
 
 hr.star-light:after {
-  background-color: @theme-success;
+  background-color: @dark-shade;
   color: white;
 }
 
 hr.star-primary {
-  border-color: @theme-primary;
+  border-color: @dark-shade;
 }
 
 hr.star-primary:after {
   background-color: white;
-  color: @theme-primary;
+  color: @dark-shade;
 }
 
 .img-centered {
@@ -75,7 +75,7 @@ hr.star-primary:after {
 
 header {
   text-align: center;
-  background: @theme-success;
+  background: @dark-shade;
   color: white;
   .container {
     padding-top: 100px;
@@ -121,7 +121,7 @@ header {
 }
 
 .navbar-custom {
-  background: @theme-primary;
+  background: @main-brand;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -145,7 +145,7 @@ header {
       a {
         color: white;
         &:hover {
-          color: @accent;
+          color: @dark-shade;
           outline: none;
         }
         &:focus,
@@ -156,12 +156,12 @@ header {
       &.active {
         a {
           color: white;
-          background: @accent;
+          background: @dark-accent;
           &:hover,
           &:focus,
           &:active {
             color: white;
-            background: @accent;
+            background: @light-accent;
           }
         }
       }
@@ -174,9 +174,9 @@ header {
     border-color: white;
     &:hover,
     &:focus {
-      background-color: @theme-success;
+      background-color: @main-brand;
       color: white;
-      border-color: @theme-success;
+      border-color: @main-brand;
     }
   }
 }
@@ -282,7 +282,6 @@ section.success {
   position: relative;
   margin-bottom: 0;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid @gray-lighter;
   input,
   textarea {
     z-index: 1;
@@ -315,6 +314,26 @@ section.success {
     padding-left: 14px;
     border-left: 1px solid @gray-lighter;
   }
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    @light-shade;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    @light-shade;
+    opacity:  1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    @light-shade;
+    opacity:  1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    @light-shade;
+  }
+  :-ms-input-placeholder { /* Microsoft Edge */
+    color:    @light-shade;
+  }
+  .form-control {
+    color: @light-shade;
+  }
 }
 
 .floating-label-form-group-with-value {
@@ -328,10 +347,6 @@ section.success {
   label {
     color: @theme-success;
   }
-}
-
-form .row:first-child .floating-label-form-group {
-  border-top: 1px solid @gray-lighter;
 }
 
 footer {
@@ -477,4 +492,9 @@ footer {
     opacity: 0;
     display: none;
   }
+}
+
+.card {
+  background-color: @dark-shade;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }

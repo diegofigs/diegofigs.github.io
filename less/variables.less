@@ -2,11 +2,17 @@
 
 // Gray and Brand Colors for use across theme
 
-@theme-primary:    #0D47A1;
-@theme-success:    #2196F3;
-@accent:           #64DD17;
+@theme-primary:    @main-brand;
+@theme-success:    @dark-shade;
+@accent:           @light-accent;
 
-@gray-base:        #000;
+@light-shade:      #F4F2F8;
+@light-accent:     #8DCFEC;
+@main-brand:       #2984C4;
+@dark-accent:      #72AED4;
+@dark-shade:       #1C558A;
+
+@gray-base:        @light-shade;
 @gray-darker:      lighten(@gray-base, 13.5%); // #222
 @gray-dark:        lighten(@gray-base, 20%);   // #333
 @gray:             lighten(@gray-base, 33.5%); // #555

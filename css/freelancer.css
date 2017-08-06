@@ -1,7 +1,7 @@
 /*!
  * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
  * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ * Licensed under  ()
  */
 .timeline {
   list-style: none;
@@ -437,28 +437,28 @@ section.success {
 }
 .floating-label-form-group ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
-  color: #F4F2F8;
+  color: #1C558A;
 }
 .floating-label-form-group :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: #F4F2F8;
+  color: #1C558A;
   opacity: 1;
 }
 .floating-label-form-group ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: #F4F2F8;
+  color: #1C558A;
   opacity: 1;
 }
 .floating-label-form-group :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #F4F2F8;
+  color: #1C558A;
 }
 .floating-label-form-group :-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #F4F2F8;
+  color: #1C558A;
 }
 .floating-label-form-group .form-control {
-  color: #F4F2F8;
+  color: #1C558A;
 }
 .floating-label-form-group-with-value label {
   top: 0;
@@ -499,6 +499,48 @@ footer .footer-below {
   color: #1C558A;
   background: white;
   border: solid 2px white;
+}
+.btn-light-accent {
+  color: white;
+  background-color: #8DCFEC;
+  border-color: #8DCFEC;
+  font-weight: 700;
+}
+.btn-light-accent:hover,
+.btn-light-accent:focus,
+.btn-light-accent:active,
+.btn-light-accent.active,
+.open .dropdown-toggle.btn-light-accent {
+  color: white;
+  background-color: #61bde5;
+  border-color: #59b9e3;
+}
+.btn-light-accent:active,
+.btn-light-accent.active,
+.open .dropdown-toggle.btn-light-accent {
+  background-image: none;
+}
+.btn-light-accent.disabled,
+.btn-light-accent[disabled],
+fieldset[disabled] .btn-light-accent,
+.btn-light-accent.disabled:hover,
+.btn-light-accent[disabled]:hover,
+fieldset[disabled] .btn-light-accent:hover,
+.btn-light-accent.disabled:focus,
+.btn-light-accent[disabled]:focus,
+fieldset[disabled] .btn-light-accent:focus,
+.btn-light-accent.disabled:active,
+.btn-light-accent[disabled]:active,
+fieldset[disabled] .btn-light-accent:active,
+.btn-light-accent.disabled.active,
+.btn-light-accent[disabled].active,
+fieldset[disabled] .btn-light-accent.active {
+  background-color: #8DCFEC;
+  border-color: #8DCFEC;
+}
+.btn-light-accent .badge {
+  color: #8DCFEC;
+  background-color: white;
 }
 .btn-primary {
   color: white;
@@ -677,6 +719,6 @@ fieldset[disabled] .btn-success.active {
   display: none;
 }
 .card {
-  background-color: #1C558A;
+  background-color: #F4F2F8;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }

@@ -315,24 +315,24 @@ section.success {
     border-left: 1px solid @gray-lighter;
   }
   ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    @light-shade;
+    color:    @dark-shade;
   }
   :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    @light-shade;
+    color:    @dark-shade;
     opacity:  1;
   }
   ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    @light-shade;
+    color:    @dark-shade;
     opacity:  1;
   }
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color:    @light-shade;
+    color:    @dark-shade;
   }
   :-ms-input-placeholder { /* Microsoft Edge */
-    color:    @light-shade;
+    color:    @dark-shade;
   }
   .form-control {
-    color: @light-shade;
+    color: @dark-shade;
   }
 }
 
@@ -384,6 +384,15 @@ footer {
     background: white;
     border: solid 2px white;
   }
+}
+
+.btn-light-accent {
+  .button-variant(white; @light-accent; @light-accent);
+  font-weight: 700;
+}
+
+.btn-light-shade {
+
 }
 
 .btn-primary {
@@ -495,6 +504,6 @@ footer {
 }
 
 .card {
-  background-color: @dark-shade;
+  background-color: @light-shade;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }

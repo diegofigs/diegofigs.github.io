@@ -20,7 +20,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: @light-accent;
+  color: lighten(@light-accent, 10%);
   outline: none;
 }
 
@@ -52,12 +52,12 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-  border-color: white;
+  border-color: @light-shade;
 }
 
 hr.star-light:after {
   background-color: @dark-shade;
-  color: white;
+  color: @light-shade;
 }
 
 hr.star-primary {
@@ -65,7 +65,7 @@ hr.star-primary {
 }
 
 hr.star-primary:after {
-  background-color: white;
+  background-color: @light-shade;
   color: @dark-shade;
 }
 
@@ -76,7 +76,7 @@ hr.star-primary:after {
 header {
   text-align: center;
   background: @dark-shade;
-  color: white;
+  color: @light-shade;
   .container {
     padding-top: 100px;
     padding-bottom: 50px;
@@ -121,7 +121,7 @@ header {
 }
 
 .navbar-custom {
-  background: @main-brand;
+  background: darken(@dark-shade, 5%);
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -145,7 +145,7 @@ header {
       a {
         color: white;
         &:hover {
-          color: @dark-shade;
+          color: @light-accent;
           outline: none;
         }
         &:focus,
@@ -210,9 +210,14 @@ section {
   }
 }
 
-section.success {
-  background: @theme-success;
-  color: white;
+section.dark {
+  background: @dark-shade;
+  color: @light-shade;
+}
+
+section.light {
+  background: @light-shade;
+  color: @dark-shade;
 }
 
 @media(max-width:767px) {
@@ -315,24 +320,24 @@ section.success {
     border-left: 1px solid @gray-lighter;
   }
   ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    @dark-shade;
+    color:    @light-shade;
   }
   :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    @dark-shade;
+    color:    @light-shade;
     opacity:  1;
   }
   ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    @dark-shade;
+    color:    @light-shade;
     opacity:  1;
   }
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color:    @dark-shade;
+    color:    @light-shade;
   }
   :-ms-input-placeholder { /* Microsoft Edge */
-    color:    @dark-shade;
+    color:    @light-shade;
   }
   .form-control {
-    color: @dark-shade;
+    color: @light-shade;
   }
 }
 
@@ -350,20 +355,20 @@ section.success {
 }
 
 footer {
-  color: white;
+  color: @light-shade;
   h3 {
     margin-bottom: 30px;
   }
   .footer-above {
     padding-top: 50px;
-    background-color: @theme-primary;
+    background-color: @dark-shade;
   }
   .footer-col {
     margin-bottom: 50px;
   }
   .footer-below {
     padding: 25px 0;
-    background-color: darken(@theme-primary, 5%);
+    background-color: darken(@dark-shade, 5%);
   }
 }
 
@@ -384,15 +389,6 @@ footer {
     background: white;
     border: solid 2px white;
   }
-}
-
-.btn-light-accent {
-  .button-variant(white; @light-accent; @light-accent);
-  font-weight: 700;
-}
-
-.btn-light-shade {
-
 }
 
 .btn-primary {
@@ -443,6 +439,8 @@ footer {
 
 .portfolio-modal {
   .modal-content {
+    background-color: @light-shade;
+    color: @dark-shade;
     border-radius: 0;
     background-clip: border-box;
     -webkit-box-shadow: none;
@@ -504,6 +502,7 @@ footer {
 }
 
 .card {
-  background-color: @light-shade;
+  background-color: @dark-shade;
+  color: @light-shade;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }

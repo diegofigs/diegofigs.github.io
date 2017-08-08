@@ -279,10 +279,10 @@ header .intro-text .skills {
   letter-spacing: 1px;
 }
 .navbar-custom .navbar-nav li a {
-  color: white;
+  color: #8DCFEC;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #8DCFEC;
+  color: white;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -291,7 +291,7 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #72AED4;
+  background: #8DCFEC;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
@@ -332,7 +332,7 @@ header .intro-text .skills {
   }
 }
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 section h2 {
   margin: 0;

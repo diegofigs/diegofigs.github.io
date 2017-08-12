@@ -176,7 +176,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Inconsolata", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -213,6 +213,15 @@ hr.star-primary:after {
   background-color: #F4F2F8;
   color: #1C558A;
 }
+.star {
+  content: "\f005";
+  font-family: FontAwesome, sans-serif;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 2em;
+  padding: 0 0.25em;
+}
 .img-centered {
   margin: 0 auto;
 }
@@ -230,7 +239,7 @@ header img {
   margin: 0 auto;
 }
 header .img-responsive {
-  border-radius: 100%;
+  border-radius: 50%;
 }
 header .intro-text .name {
   display: block;
@@ -439,31 +448,6 @@ section.light {
   padding-left: 14px;
   border-left: 1px solid #ffffff;
 }
-.floating-label-form-group ::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
-  color: #F4F2F8;
-}
-.floating-label-form-group :-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #F4F2F8;
-  opacity: 1;
-}
-.floating-label-form-group ::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #F4F2F8;
-  opacity: 1;
-}
-.floating-label-form-group :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #F4F2F8;
-}
-.floating-label-form-group :-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #F4F2F8;
-}
-.floating-label-form-group .form-control {
-  color: #F4F2F8;
-}
 .floating-label-form-group-with-value label {
   top: 0;
   opacity: 1;
@@ -500,7 +484,7 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #1C558A;
+  color: #2984C4;
   background: white;
   border: solid 2px white;
 }
@@ -683,7 +667,14 @@ fieldset[disabled] .btn-success.active {
   display: none;
 }
 .card {
-  background-color: #1C558A;
-  color: #F4F2F8;
+  background-color: white;
+  color: #1C558A;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.flex-grid {
+  display: flex;
+  align-items: center;
+}
+.col {
+  flex: 1;
 }

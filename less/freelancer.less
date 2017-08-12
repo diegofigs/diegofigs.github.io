@@ -25,7 +25,7 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Inconsolata", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -69,6 +69,16 @@ hr.star-primary:after {
   color: @dark-shade;
 }
 
+.star {
+  content: "\f005";
+  font-family: FontAwesome, sans-serif;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 2em;
+  padding: 0 0.25em;
+}
+
 .img-centered {
   margin: 0 auto;
 }
@@ -86,7 +96,7 @@ header {
     margin: 0 auto;
   }
   .img-responsive {
-    border-radius: 100%;
+    border-radius: 50%;
   }
   .intro-text {
     .name {
@@ -319,26 +329,6 @@ section.light {
     padding-left: 14px;
     border-left: 1px solid @gray-lighter;
   }
-  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    @light-shade;
-  }
-  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    @light-shade;
-    opacity:  1;
-  }
-  ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    @light-shade;
-    opacity:  1;
-  }
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color:    @light-shade;
-  }
-  :-ms-input-placeholder { /* Microsoft Edge */
-    color:    @light-shade;
-  }
-  .form-control {
-    color: @light-shade;
-  }
 }
 
 .floating-label-form-group-with-value {
@@ -385,7 +375,7 @@ footer {
   &:focus,
   &:active,
   &.active {
-    color: @theme-success;
+    color: @main-brand;
     background: white;
     border: solid 2px white;
   }
@@ -502,7 +492,15 @@ footer {
 }
 
 .card {
-  background-color: @dark-shade;
-  color: @light-shade;
+  background-color: white;
+  color: @dark-shade;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.flex-grid {
+  display: flex;
+  align-items: center;
+}
+.col {
+  flex: 1;
 }
